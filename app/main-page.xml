@@ -31,13 +31,6 @@
   verticalAlignment="center"
 />
 
-<SearchBar
-  id="searchBar"
-  hint="Enter search term here ..."
-  text="{{sbText}}"
-  clear="onClear"
-  submit="onSubmit"
-/>
 
 
 
