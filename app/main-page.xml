@@ -1,0 +1,47 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="My App" icon="" />
+    <StackLayout class="p-4">
+          <SearchBar
+            id="searchBar"
+            hint="Search Here ..."
+            text="{{sbText}}"
+            clear="onClear"
+            submit="onSubmit"
+        />
+        <Label text="Hit the button" class="text-3xl text-center" />
+        <Button text="TAP" tap="{{ onTap }}" class="-primary" />
+        <Label text="{{ message }}" class="text-lg text-center text-gray-400" textWrap="true" />
+
+        <Button text="Push!" tap="onTap" />
+        <WrapLayout backgroundColor="#3c495e">
+  <label text="first" width="30%" height="30%" backgroundColor="#43b883" />
+  <label text="second" width="30%" height="30%" backgroundColor="#aqua" />
+  <label text="third" width="30%" height="30%" backgroundColor="#289062" />
+  <label text="fourth" width="30%" height="30%" backgroundColor="#289062" />
+</WrapLayout>
+
+<TimePicker
+  hour="10"
+  minute="25"
+  loaded="onPickerLoaded"
+  row="2"
+  col="0"
+  colSpan="2"
+  class="m-15"
+  verticalAlignment="center"
+/>
+
+<SearchBar
+  id="searchBar"
+  hint="Enter search term here ..."
+  text="{{sbText}}"
+  clear="onClear"
+  submit="onSubmit"
+/>
+
+
+
+      
+
+    </StackLayout>
+</Page>
